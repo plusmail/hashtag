@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해시태그 관리</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group input {
+            padding: 8px;
+            margin-right: 10px;
+            width: 200px;
+        }
+        
+        .hashtag-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .hashtag-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        
+        .hashtag-item span {
+            margin-right: 10px;
+        }
+        
+        .edit-input {
+            padding: 6px;
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 6px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-add {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-edit {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .btn-delete {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .btn-save {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-cancel {
+            background-color: #757575;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>해시태그 관리</h1>
+        
+        <div class="input-group">
+            <input type="text" id="newHashtagInput" placeholder="새 해시태그 입력">
+            <button onclick="addHashTag()" class="btn-add">추가</button>
+        </div>
+        
+        <ul id="hashtagList" class="hashtag-list">
+            <!-- 해시태그 목록이 여기에 동적으로 추가됩니다 -->
+        </ul>
+    </div>
+
+    <script src="/js/hashtag-frontend.js"></script>
+</body>
+</html>
